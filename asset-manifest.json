@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-blog/static/css/main.05dab4b9.css",
-    "main.js": "/react-blog/static/js/main.0998c633.js",
+    "main.js": "/react-blog/static/js/main.06990cbf.js",
     "static/media/gossip.svg": "/react-blog/static/media/gossip.a96f686a89cb9fb5edb8ca3e2f3269f7.svg",
     "index.html": "/react-blog/index.html",
     "static/media/github.svg": "/react-blog/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
@@ -20,10 +20,10 @@
     "static/media/pagination_next_black.svg": "/react-blog/static/media/pagination_next_black.cc22de2c0f1710a5cce58f0c4ea39e49.svg",
     "static/media/hamburger_black.svg": "/react-blog/static/media/hamburger_black.9dbc5a3a96ad85a57422263699b1695d.svg",
     "main.05dab4b9.css.map": "/react-blog/static/css/main.05dab4b9.css.map",
-    "main.0998c633.js.map": "/react-blog/static/js/main.0998c633.js.map"
+    "main.06990cbf.js.map": "/react-blog/static/js/main.06990cbf.js.map"
   },
   "entrypoints": [
     "static/css/main.05dab4b9.css",
-    "static/js/main.0998c633.js"
+    "static/js/main.06990cbf.js"
   ]
 }
