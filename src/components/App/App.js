@@ -26,7 +26,7 @@ function App() {
       <AuthContext.Provider value={{user, loading, error}}>
         <ThemeProvider theme={themeMode}>
           <Global styles={{body: {background: themeMode.background.body}}} />
-          <Router>
+          <Router "/react-blog"/>
             <Header/>
               <Routes>
                 <Route exact path='/' element={<LoginPage />} />
