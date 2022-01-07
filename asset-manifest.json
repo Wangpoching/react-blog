@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react-blog/static/css/main.05dab4b9.css",
+    "main.js": "/react-blog/static/js/main.0998c633.js",
+    "static/media/gossip.svg": "/react-blog/static/media/gossip.a96f686a89cb9fb5edb8ca3e2f3269f7.svg",
+    "index.html": "/react-blog/index.html",
+    "static/media/github.svg": "/react-blog/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
+    "static/media/bulb_black.svg": "/react-blog/static/media/bulb_black.0ba865c1dd9917e7cac75f9dee864ad2.svg",
+    "static/media/visibility_off.svg": "/react-blog/static/media/visibility_off.d8fd38e652ea89f5f912e4c732f95b75.svg",
+    "static/media/dark_mode_black.svg": "/react-blog/static/media/dark_mode_black.4a0442c8f69f2d740f5dbcd2d10a0f5f.svg",
+    "static/media/light_mode_black.svg": "/react-blog/static/media/light_mode_black.22fcf85ffd81cebbca7e6fa0c8da242c.svg",
+    "static/media/list_bulleted_black.svg": "/react-blog/static/media/list_bulleted_black.04f0368d83cb62bbdc7e1d29971f8b95.svg",
+    "static/media/search_white.svg": "/react-blog/static/media/search_white.96c2b4d9b2d987314ce001aedc17c41d.svg",
+    "static/media/visibility.svg": "/react-blog/static/media/visibility.d42e2dff8b09be94d6d209f0e86cf2d3.svg",
+    "static/media/list_numbered_black.svg": "/react-blog/static/media/list_numbered_black.89e11c0fc7c27931d156d0c6a1af6748.svg",
+    "static/media/email.svg": "/react-blog/static/media/email.2245779a32f95d6f31372dbcbd90b225.svg",
+    "static/media/back.svg": "/react-blog/static/media/back.45ab30f89d75e3c52cc4921407d8163c.svg",
+    "static/media/arrow.svg": "/react-blog/static/media/arrow.2fdcb59b5a6954f155f7724dedb8457f.svg",
+    "static/media/pagination_previous_black.svg": "/react-blog/static/media/pagination_previous_black.bd218627b312af39e4ea6a9a60e5ccbc.svg",
+    "static/media/pagination_next_black.svg": "/react-blog/static/media/pagination_next_black.cc22de2c0f1710a5cce58f0c4ea39e49.svg",
+    "static/media/hamburger_black.svg": "/react-blog/static/media/hamburger_black.9dbc5a3a96ad85a57422263699b1695d.svg",
+    "main.05dab4b9.css.map": "/react-blog/static/css/main.05dab4b9.css.map",
+    "main.0998c633.js.map": "/react-blog/static/js/main.0998c633.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05dab4b9.css",
+    "static/js/main.0998c633.js"
+  ]
+}
