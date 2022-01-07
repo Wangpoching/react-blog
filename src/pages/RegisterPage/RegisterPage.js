@@ -150,9 +150,10 @@ function RegisterPage() {
   }
 
   useEffect(() => {
+    if (isLoading) return
     if (loading) return
     if (user) navigate('/home')
-  }, [user, loading, navigate])
+  }, [user, loading, navigate, isLoading])
 
   return (
     <Wrapper>

@@ -1,5 +1,5 @@
+import env from 'react-dotenv'
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, addDoc, getDocs, query, where } from 'firebase/firestore/lite'
 import { getAuth } from 'firebase/auth'
 import { 
   signInWithPopup, 
@@ -12,21 +12,19 @@ import {
 import { getIdToken } from './utils'
 import { thirdPartyRegister, normalRegister } from './WebAPI'
 
-
 const firebaseConfig = {
-  apiKey: 'AIzaSyDwEK2eVoaxdegcuZ-Qo04zI9TER4NIkhY',
-  authDomain: 'react-blog-78cfd.firebaseapp.com',
-  projectId: 'react-blog-78cfd',
-  storageBucket: 'react-blog-78cfd.appspot.com',
-  messagingSenderId: '307157674489',
-  appId: '1:307157674489:web:46c0e4a3486a73cb273528',
-  measurementId: 'G-B38KZEEWMZ'
-};
+  apiKey: env.API_KEY,
+  authDomain: env.AUTH_DOMAIN,
+  projectId: env.PROJECT_ID,
+  storageBucket: env.STORAGE_BUCKET,
+  messagingSenderId: env.MESSAGINGSENDER_ID,
+  appId: env.APP_ID,
+  measurementId: env.MEASUREMENT_ID
+}
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const auth = getAuth();
-const googleProvider = new GoogleAuthProvider();
+const app = initializeApp(firebaseConfig)
+const auth = getAuth()
+const googleProvider = new GoogleAuthProvider()
 
 const signInWithGoogle = async () => {
   try {
@@ -35,64 +33,48 @@ const signInWithGoogle = async () => {
     try {
       const res = await thirdPartyRegister(IdToken)
       if (!res.ok) {
-        throw {
-          message: '登入失敗'
-        }
+        throw new Error('登入失敗')
       }
     } catch (err) {
       await signOut(auth)
-      throw {
-        message: '登入失敗'
-      }
+      throw new Error('登入失敗')
     }
   } catch (err) {
-    throw {
-      message: err.message
-    }
+      throw new Error(err.message)
   }
 }
 
 const signInByEmailAndPassword = async (email, password) => {
   try {
-    await signInWithEmailAndPassword(auth, email, password);
+    await signInWithEmailAndPassword(auth, email, password)
   } catch (err) {
-    throw {
-      message: err.message
-    }
+    throw new Error(err.message)
   }
 }
 
 const registerWithEmailAndPassword = async (name, email, password) => {
   try {
-    const res = await createUserWithEmailAndPassword(auth, email, password)
+    await createUserWithEmailAndPassword(auth, email, password)
     const IdToken = await getIdToken(auth)
     try {
       const res = await normalRegister(IdToken, name)
       if (!res.ok) {
-        throw {
-          message: '註冊失敗'
-        }
+        throw new Error('註冊失敗')
       }
     } catch (err) {
       await signOut(auth)
-      throw {
-        message: '註冊失敗'
-      }        
+      throw new Error('註冊失敗')
     }
   } catch (err) {
-    throw {
-      message: err.message
-    }
+    throw new Error(err.message)
   }
 }
 
 const sendPasswordResetMail = async (email) => {
   try {
-    await sendPasswordResetEmail(auth, email);
+    await sendPasswordResetEmail(auth, email)
   } catch (err) {
-    throw {
-      message: err.message
-    }
+    throw new Error(err.message)
   }
 }
 
@@ -102,7 +84,6 @@ const logout = async () => {
 
 export {
   auth,
-  db,
   signInWithGoogle,
   signInByEmailAndPassword,
   registerWithEmailAndPassword,
