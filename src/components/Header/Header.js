@@ -191,7 +191,7 @@ function Header() {
       />
       {showMenu && <FreezeFrame onClick={handleClick}/>}
     </HeaderContainer>
-  );
+  )
 }
 
 export default Header

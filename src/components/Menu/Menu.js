@@ -23,7 +23,6 @@ const MenuContainer = styled.ul`
   transition: all 0.5s ease 0s;
   z-index: 100;
   transform: ${({ $showMenu }) => $showMenu ? 'translateX(0%);' : 'translateX(100%);'}
-
   ${MEDIA_QUERY_SM} {
     width: 90%;
   }

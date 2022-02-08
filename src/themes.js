@@ -87,6 +87,6 @@ export const themes = {
     },
     error: "#D04D5A",
   },
-};
+}
 
-export default themes;
+export default themes

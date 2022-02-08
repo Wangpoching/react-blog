@@ -1,4 +1,4 @@
-const BASE_URL = 'https://react-blog.bocyun.tw/v1'
+export const BASE_URL = 'https://react-blog.bocyun.tw/v1'
 
 export const thirdPartyRegister = async (IdToken) => {
   return await fetch(`${BASE_URL}/register`, {

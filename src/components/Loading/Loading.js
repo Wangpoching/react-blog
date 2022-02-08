@@ -37,7 +37,7 @@ const Spin = styled.div`
 export default function Loading() {
   return (
     <LoadingBackground>
-      <Spin />
+      <Spin data-testid="spin-element"/>
     </LoadingBackground>
   )
 }

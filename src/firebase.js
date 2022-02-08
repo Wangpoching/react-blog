@@ -62,7 +62,7 @@ const registerWithEmailAndPassword = async (name, email, password) => {
         throw new Error('註冊失敗')
       }
     } catch (err) {
-      await signOut(auth)
+      await auth.currentUser.delete()
       throw new Error('註冊失敗')
     }
   } catch (err) {
